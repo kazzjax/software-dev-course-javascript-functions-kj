@@ -32,7 +32,7 @@ This activity reinforces:
 // ❌ Original Code (Before Refactoring)
 // ============================================
 
-// Script 1 - Greeting multiple users
+/*Script 1 - Greeting multiple users
 console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
@@ -72,3 +72,34 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+//Script one
+const userList = ["Alice", "Bob", "Charlie"];
+function greetUser(users){
+    for (let i = 0; i < users.length; i++){
+   console.log(`Welcome, ${users[i]}!`);}
+}
+greetUser(userList);
+
+//Script two
+function addValues (value1, value2){
+   return value1 + value2
+ }
+ let num1 = 5;
+ let num2 = 10;
+ console.log(`The sum of ${num1} and ${num2} is ${addValues(num1,num2)}`);
+
+ //Script three
+ function multiplyValues (value1, value2){
+   return value1 * value2
+ }
+ console.log(`The product of ${num1} and ${num2} is ${multiplyValues(num1,num2)}`);
+
+ //Script four
+ const nameList = ["Alice", "Bob", "Charlie"];
+ console.log("Names in the list: ");
+ function printList(attendees){
+   for (let i=0; i <attendees.length; i++){
+    console.log(attendees[i])
+   }
+ }
+ printList(nameList);
